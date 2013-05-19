@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hadoop.test</groupId>
+  <artifactId>hadoop2.0_exec</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>hadoop2.0_exec</name>
+  <packaging>jar</packaging>
+
+	<properties>
+		<!-- 0.20.2-cdh3u3 2.0.0-mr1-cdh4.1.1 -->
+		<hadoop.version>2.0.0-mr1-cdh4.0.1</hadoop.version>
+		<hadoop.version1>2.0.0-cdh4.0.1</hadoop.version1>
+		<hadoop.mrunit.version>1.0.0</hadoop.mrunit.version>	
+	</properties>
+	
+  	<dependencies>
+ 		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-tools</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-core</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-examples</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-client</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<version>${hadoop.version1}</version>
+		</dependency>
+		
+  </dependencies>
+  
+  	<repositories>
+		<repository>
+			<id>cloudera</id>
+			<url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+		</repository>
+	</repositories>
+
+</project>
